@@ -1,0 +1,116 @@
+* {
+    font-family: "Maple Mono NF", "Symbols Nerd Font", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e1e4ef;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(27, 30, 42, 0.91);
+    border: 1px solid rgba(199, 203, 216, 0.16);
+    border-radius: 18px;
+    padding: 5px 8px;
+}
+
+#custom-fedora {
+    color: #c7cbd8;
+    font-size: 19px;
+    padding: 0 10px 0 6px;
+}
+
+#workspaces {
+    padding: 0 3px;
+}
+
+#workspaces button {
+    color: #a3aabd;
+    background: transparent;
+    border-radius: 12px;
+    padding: 0 10px;
+    margin: 2px;
+    transition: background 150ms ease, color 150ms ease;
+}
+
+#workspaces button.active {
+    background: #c7cbd8;
+    color: #20232f;
+}
+
+#workspaces button:hover {
+    background: #4b5268;
+    color: #f0f1f6;
+}
+
+#custom-roman-clock {
+    color: #e1e4ef;
+    padding: 0 14px;
+}
+
+#network,
+#bluetooth,
+#custom-notifications,
+#tray,
+#custom-clipboard,
+#custom-btop,
+#custom-power {
+    background: #34394c;
+    border: 1px solid rgba(199, 203, 216, 0.06);
+    border-radius: 12px;
+    padding: 0 11px;
+    margin: 2px;
+}
+
+#network {
+    color: #c7d0e2;
+}
+
+#bluetooth {
+    color: #aebbd5;
+}
+
+#custom-notifications {
+    color: #d6d9e4;
+}
+
+#tray {
+    color: #e1e4ef;
+}
+
+#custom-clipboard {
+    color: #c5cbd9;
+}
+
+#custom-btop {
+    color: #aebbd5;
+}
+
+#custom-power {
+    color: #d6a6ad;
+    margin-right: 3px;
+}
+
+#network:hover,
+#bluetooth:hover,
+#custom-notifications:hover,
+#custom-clipboard:hover,
+#custom-btop:hover,
+#custom-power:hover {
+    background: #4b5268;
+}
+
+tooltip {
+    background: #20232f;
+    border: 1px solid #596176;
+    border-radius: 10px;
+    color: #e1e4ef;
+    padding: 7px;
+}

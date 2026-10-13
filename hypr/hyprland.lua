@@ -1,0 +1,6 @@
+require("~/.config/hypr/hyprland/variables.lua")
+require("~/.config/hypr/hyprland/env.lua")
+require("~/.config/hypr/hyprland/autostart.lua")
+require("~/.config/hypr/hyprland/monitors")
+require("~/.config/hypr/hyprland/autostart.lua")
+require("~/.config/hypr/hyprland/keybinds.lua")

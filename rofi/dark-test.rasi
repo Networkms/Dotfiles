@@ -1,0 +1,92 @@
+* {
+    font: "Maple Mono NF 11";
+    background-color: #20232F;
+    text-color: #C7CBD8;
+    border-color: #788198;
+}
+
+window {
+    width: 640px;
+    height: 470px;
+    location: center;
+    anchor: center;
+    padding: 18px;
+    border: 1px;
+    border-radius: 20px;
+    background-color: #20232F;
+    children: [ mainbox ];
+}
+
+mainbox {
+    spacing: 14px;
+    background-color: #20232F;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding: 12px 16px;
+    spacing: 10px;
+    border-radius: 12px;
+    background-color: #3C4255;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: #3C4255;
+    text-color: #C7CBD8;
+}
+
+entry {
+    background-color: #3C4255;
+    text-color: #C7CBD8;
+    placeholder: "DARK THEME TEST";
+    placeholder-color: #788198;
+}
+
+listview {
+    columns: 1;
+    lines: 7;
+    spacing: 5px;
+    fixed-height: true;
+    scrollbar: false;
+    background-color: #20232F;
+}
+
+element {
+    padding: 10px 12px;
+    spacing: 12px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #20232F;
+    text-color: #C7CBD8;
+    children: [ element-icon, element-text ];
+}
+
+element normal.normal,
+element normal.active,
+element normal.urgent,
+element alternate.normal,
+element alternate.active,
+element alternate.urgent {
+    background-color: #20232F;
+    text-color: #C7CBD8;
+}
+
+element selected.normal,
+element selected.active,
+element selected.urgent {
+    background-color: #3C4255;
+    text-color: #C7CBD8;
+}
+
+element-icon {
+    size: 26px;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    background-color: inherit;
+    text-color: inherit;
+}

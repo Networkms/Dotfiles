@@ -1,0 +1,162 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    display-drun: " Apps";
+    display-run: " Run";
+    display-window: " Windows";
+    drun-display-format: "{name}";
+    drun-match-fields: "name";
+    font: "Maple Mono NF 11";
+    terminal: "ghostty";
+    sidebar-mode: false;
+    matching: "normal";
+    sorting-method: "fzf";
+    scroll-method: 1;
+    disable-history: false;
+    hide-scrollbar: true;
+    hover-select: false;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+  @theme "~/.config/rofi/dark-test.rasi"
+* {
+    bg:             #20232Ff2;
+    bg-alt:         #34394Cf2;
+    bg-hover:       #4B5268f2;
+    fg:             #E1E4EF;
+    fg-muted:       #A3AABD;
+    accent:         #C7CBD8;
+    accent-text:    #20232F;
+    border:         #596176;
+    urgent:         #D6A6AD;
+
+    background-color: @bg;
+    text-color: @fg;
+    font: "Maple Mono NF 11";
+}
+
+window {
+    width: 640px;
+    height: 470px;
+    border: 1px;
+    border-color: @border;
+    border-radius: 20px;
+    padding: 18px;
+    location: center;
+    anchor: center;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ "inputbar", "message", "listview" ];
+    spacing: 14px;
+    padding: 2px;
+}
+
+inputbar {
+    background-color: #34394C;
+    text-color: #E1E4EF;
+    border: 1px;
+    border-color: #596176;
+    border-radius: 13px;
+    padding: 12px 15px;
+    spacing: 10px;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color: #C7CBD8;
+    background-color: #34394C;
+}
+
+entry {
+    placeholder: "Search the fog...";
+    placeholder-color: #A3AABD;
+    text-color: #E1E4EF;
+    background-color: #34394C;
+    cursor: text;
+}
+
+message {
+    background-color: transparent;
+    padding: 0 4px;
+}
+
+textbox {
+    text-color: @fg-muted;
+    background-color: transparent;
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 8;
+    fixed-height: false;
+    cycle: true;
+    spacing: 5px;
+    scrollbar: false;
+    layout: vertical;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg;
+    border-radius: 11px;
+    padding: 9px 12px;
+    spacing: 10px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: @accent-text;
+    border: 1px;
+    border-color: #DCE0EA;
+}
+
+element selected.active {
+    background-color: @accent;
+    text-color: @accent-text;
+}
+
+element selected.urgent {
+    background-color: @urgent;
+    text-color: @accent-text;
+}
+
+element-icon {
+    size: 24px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+mode-switcher {
+    background-color: transparent;
+    spacing: 8px;
+}
+
+button {
+    background-color: @bg-alt;
+    text-color: @fg-muted;
+    border-radius: 9px;
+    padding: 7px 12px;
+}
+
+button selected {
+    background-color: @accent;
+    text-color: @accent-text;
+}
